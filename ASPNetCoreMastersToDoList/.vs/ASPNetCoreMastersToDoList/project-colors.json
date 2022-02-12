@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e1b5abc1-3a78-4c1d-8aee-73f154b86f44": {
+      "ProjectGuid": "e1b5abc1-3a78-4c1d-8aee-73f154b86f44",
+      "DisplayName": "ASPNetCoreMastersToDoList",
+      "ColorIndex": 0
+    },
+    "74c6ca2f-b3af-475f-b57b-4c217d341eae": {
+      "ProjectGuid": "74c6ca2f-b3af-475f-b57b-4c217d341eae",
+      "DisplayName": "ASPNetCoreMastersToDoList.API",
+      "ColorIndex": 1
+    },
+    "872c4f6c-25f3-41d0-8d37-a36ee2d8b145": {
+      "ProjectGuid": "872c4f6c-25f3-41d0-8d37-a36ee2d8b145",
+      "DisplayName": "ASPNetCoreMastersToDoList.Service",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

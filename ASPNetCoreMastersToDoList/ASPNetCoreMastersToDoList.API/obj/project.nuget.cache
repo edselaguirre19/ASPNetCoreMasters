@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "K5WqVzNp46YcKkSFA6ChdbYt8yMcR3AA3c3A82EV10sHo3+t+DzPsooV8tWJYJRxASYamCobzvSxEFFJ0/CXHg==",
+  "dgSpecHash": "zE9ySsKDBNBqwSpJLcz1hU0Pdh4rH9dKrqZfZ3fe5+GuDKlSU0FcZiKIQ3ubEVu82EjH6MZLK5FBKjiAbwhfqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EdselA\\source\\repos\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj",
+  "projectFilePath": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EdselA\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\EdselA\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\EdselA\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\EdselA\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\EdselA\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

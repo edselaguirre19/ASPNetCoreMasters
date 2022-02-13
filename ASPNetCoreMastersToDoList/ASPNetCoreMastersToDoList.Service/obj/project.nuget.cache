@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X/jvmBewePJX8admnqbgR8HEmIhgQeXK7kc8bW57tWQl7PDLj4lPQ/6MEmqBoqBLQOf52LAP1vBq3n9NLbjOGw==",
+  "dgSpecHash": "1rl2o8nzQ07UuHR3P+pDhMNFixTNBVFCN/+/gGCy02iHQiHvQgooUZgMJep9NVW5bSRBFU8ylEu28RHbetZU0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EdselA\\source\\repos\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\ASPNetCoreMastersToDoList.Service.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\ASPNetCoreMastersToDoList.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EdselA\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

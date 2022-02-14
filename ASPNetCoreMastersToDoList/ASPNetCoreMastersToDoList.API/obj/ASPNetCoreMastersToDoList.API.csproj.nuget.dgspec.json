@@ -1,17 +1,88 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\EdselA\\source\\repos\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj": {}
+    "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\EdselA\\source\\repos\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj": {
+    "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\EdselA\\source\\repos\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj",
+        "projectUniqueName": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj",
         "projectName": "ASPNetCoreMastersToDoList.API",
-        "projectPath": "C:\\Users\\EdselA\\source\\repos\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj",
+        "projectPath": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\ASPNetCoreMastersToDoList.API.csproj",
         "packagesPath": "C:\\Users\\EdselA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\EdselA\\source\\repos\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\obj\\",
+        "outputPath": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\EdselA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\ASPNetCoreMastersToDoList.Service.csproj": {
+                "projectPath": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\ASPNetCoreMastersToDoList.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\ASPNetCoreMastersToDoList.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\ASPNetCoreMastersToDoList.Service.csproj",
+        "projectName": "ASPNetCoreMastersToDoList.Service",
+        "projectPath": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\ASPNetCoreMastersToDoList.Service.csproj",
+        "packagesPath": "C:\\Users\\EdselA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EdselA\\OneDrive - Magenic\\Documents\\GitHub\\ASPNetCoreMasters\\ASPNetCoreMastersToDoList\\ASPNetCoreMastersToDoList.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,9 +115,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Swashbuckle.AspNetCore": {
+            "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -60,9 +131,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

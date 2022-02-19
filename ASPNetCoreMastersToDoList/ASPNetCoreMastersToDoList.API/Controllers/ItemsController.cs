@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ASPNetCoreMastersToDoList.Service;
+using ASPNetCoreMastersToDoList.API.BindingModels;
+using ASPNetCoreMastersToDoList.Service.DTO;
 
 namespace ASPNetCoreMastersToDoList.API.Controllers
 {
@@ -16,12 +18,26 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
             _itemsService = itemService;
         }
 
-        [HttpGet("/")]
-        public IEnumerable<string> Get(int id)
+        public int Get(int id)
         {
             _logger.LogInformation("Entering controller...");
             return _itemsService.GetItems(id);
         }
+
+        [HttpPost]
+        public IActionResult Post(ItemCreateBindingModel itemCreateBindingModel)
+        {
+            _logger.LogInformation("Entering controller...");
+            var itemCreateBindingModelDTO = MapItemCreateBindingModelToDTO(itemCreateBindingModel);
+            _itemsService.SaveItems(itemCreateBindingModelDTO);
+            return Ok();
+        }
+
+
+        #region Private Methods
+        private ItemCreateBindingModelDTO MapItemCreateBindingModelToDTO(ItemCreateBindingModel itemCreateBindingModel)
+            => new ItemCreateBindingModelDTO() { Text = itemCreateBindingModel.Text };
+        #endregion
 
     }
 }

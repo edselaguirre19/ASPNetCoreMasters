@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ASPNetCoreMastersToDoList.Service.DTO;
 
 namespace ASPNetCoreMastersToDoList.Service
 {
     public interface IItemsService
     {
-        IEnumerable<string> GetItems(int id);
+        int GetItems(int id);
+
+        void SaveItems(ItemCreateBindingModelDTO itemCreateBindingModel);
     }
 }

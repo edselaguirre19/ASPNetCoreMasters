@@ -89,6 +89,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "DomainModels": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
         },
         "compile": {
@@ -96,6 +97,16 @@
         },
         "runtime": {
           "bin/placeholder/ASPNetCoreMastersToDoList.Service.dll": {}
+        }
+      },
+      "DomainModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DomainModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainModels.dll": {}
         }
       }
     }
@@ -282,6 +293,11 @@
       "type": "project",
       "path": "../ASPNetCoreMastersToDoList.Service/ASPNetCoreMastersToDoList.Service.csproj",
       "msbuildProject": "../ASPNetCoreMastersToDoList.Service/ASPNetCoreMastersToDoList.Service.csproj"
+    },
+    "DomainModels/1.0.0": {
+      "type": "project",
+      "path": "../DomainModels/DomainModels.csproj",
+      "msbuildProject": "../DomainModels/DomainModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

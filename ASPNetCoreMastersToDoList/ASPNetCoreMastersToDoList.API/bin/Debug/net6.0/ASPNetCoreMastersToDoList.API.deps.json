@@ -65,10 +65,16 @@
       },
       "ASPNetCoreMastersToDoList.Service/1.0.0": {
         "dependencies": {
+          "DomainModels": "1.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
         },
         "runtime": {
           "ASPNetCoreMastersToDoList.Service.dll": {}
+        }
+      },
+      "DomainModels/1.0.0": {
+        "runtime": {
+          "DomainModels.dll": {}
         }
       }
     }
@@ -129,6 +135,11 @@
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
     },
     "ASPNetCoreMastersToDoList.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DomainModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

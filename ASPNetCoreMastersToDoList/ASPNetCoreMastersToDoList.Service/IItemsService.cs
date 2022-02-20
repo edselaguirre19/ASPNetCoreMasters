@@ -4,8 +4,16 @@ namespace ASPNetCoreMastersToDoList.Service
 {
     public interface IItemsService
     {
-        int GetItems(int id);
+        string GetAll();
 
-        void SaveItems(ItemCreateBindingModelDTO itemCreateBindingModel);
+        string GetItem(int id);
+
+        string GetFilteredItems(Dictionary<string, string> filters);
+
+        string SaveItems(ItemCreateBindingModelDTO itemCreateBindingModel);
+
+        string UpdateItem(int id, ItemCreateBindingModelDTO itemCreateBindingModelDTO);
+
+        string DeleteItem(int id);
     }
 }

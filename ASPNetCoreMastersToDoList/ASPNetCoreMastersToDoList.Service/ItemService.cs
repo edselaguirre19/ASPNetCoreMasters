@@ -17,18 +17,39 @@ namespace ASPNetCoreMastersToDoList.Service
             _logger = logger;
         }
 
-        public int GetItems(int userId)
+        public string DeleteItem(int id)
         {
-            _logger.LogInformation("Entering service...");           
-            return userId;
+            _logger.LogInformation("Entering service...");
+            return $"Item {id} deleted!";
         }
 
-        public void SaveItems(ItemCreateBindingModelDTO itemsCreateBindingModelDTO)
+        public string GetAll()
         {
-            new ItemDomainModel
-            {
-                Text = itemsCreateBindingModelDTO.Text,
-            };
+            _logger.LogInformation("Entering service...");
+            return "Items retrieved!";
+        }
+
+        public string GetFilteredItems(Dictionary<string, string> filters)
+        {
+            _logger.LogInformation("Entering service...");
+            return "Filtered items retrived!";
+        }
+
+        public string GetItem(int id)
+        {
+            _logger.LogInformation("Entering service...");           
+            return $"Item {id} retrieved!";
+        }
+
+        public string SaveItems(ItemCreateBindingModelDTO itemsCreateBindingModelDTO)
+        {
+            _logger.LogInformation("Entering service...");
+            return "Items Saved!";
+        }
+
+        public string UpdateItem(int id, ItemCreateBindingModelDTO itemCreateBindingModelDTO)
+        {
+            return $"Item {id} updated!";
         }
     }
 }

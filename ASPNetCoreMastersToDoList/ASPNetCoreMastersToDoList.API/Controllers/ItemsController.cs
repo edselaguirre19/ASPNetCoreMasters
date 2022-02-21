@@ -5,6 +5,7 @@ using ASPNetCoreMastersToDoList.Service.DTO;
 
 namespace ASPNetCoreMastersToDoList.API.Controllers
 {
+    [ApiController]
     public class ItemsController : ControllerBase
     {
         private readonly ILogger _logger;
@@ -18,19 +19,49 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
             _itemsService = itemService;
         }
 
-        public int Get(int id)
+        [HttpGet("items")]
+        public IActionResult GetAll()
         {
             _logger.LogInformation("Entering controller...");
-            return _itemsService.GetItems(id);
+            return Ok(_itemsService.GetAll());
         }
 
-        [HttpPost]
+        [HttpGet("items/{id}")]
+        public IActionResult Get(int id)
+        {
+            _logger.LogInformation("Entering controller...");
+            return Ok(_itemsService.GetItem(id));
+        }
+
+        [HttpGet("items/filterby")]
+        public IActionResult GetByFilters([FromQuery] Dictionary<string, string> filters)
+        {
+            _logger.LogInformation("Entering controller...");
+            return Ok(_itemsService.GetFilteredItems(filters));
+        }
+
+        [HttpPost("items")]
         public IActionResult Post(ItemCreateBindingModel itemCreateBindingModel)
         {
             _logger.LogInformation("Entering controller...");
             var itemCreateBindingModelDTO = MapItemCreateBindingModelToDTO(itemCreateBindingModel);
-            _itemsService.SaveItems(itemCreateBindingModelDTO);
-            return Ok();
+            return Ok(_itemsService.SaveItems(itemCreateBindingModelDTO));
+        }
+
+        [HttpPut("items/{id}")]
+        public IActionResult Put(int id,
+            [FromBody] ItemCreateBindingModel itemCreateBindingModel)
+        {
+            _logger.LogInformation("Entering controller...");
+            var itemCreateBindingModelDTO = MapItemCreateBindingModelToDTO(itemCreateBindingModel);
+            return Ok(_itemsService.UpdateItem(id, itemCreateBindingModelDTO));
+        }
+
+        [HttpDelete("items/{id}")]
+        public IActionResult Delete(int id)
+        {
+            _logger.LogInformation("Entering controller...");
+            return Ok(_itemsService.DeleteItem(id));
         }
 
 

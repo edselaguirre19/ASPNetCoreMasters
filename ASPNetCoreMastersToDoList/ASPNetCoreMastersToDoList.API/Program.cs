@@ -32,13 +32,13 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-//app.MapControllers();
+app.MapControllers();
 
 app.UseRouting();
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(name: "default", pattern: "{controller}/{action}/{id?}");    
-});
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllerRoute(name: "default", pattern: "{controller}/{action}/{id?}");    
+//});
 
 app.Run();

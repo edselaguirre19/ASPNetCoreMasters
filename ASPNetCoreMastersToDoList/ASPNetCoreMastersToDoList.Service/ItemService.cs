@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using ASPNetCoreMastersToDoList.Service.DTO;
+using DomainModels;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,12 +17,18 @@ namespace ASPNetCoreMastersToDoList.Service
             _logger = logger;
         }
 
-        public IEnumerable<string> GetItems(int userId)
+        public int GetItems(int userId)
         {
-            _logger.LogInformation("Entering service...");
-            var result = new List<string>();
-            result.Add(userId.ToString());
-            return result;
+            _logger.LogInformation("Entering service...");           
+            return userId;
+        }
+
+        public void SaveItems(ItemCreateBindingModelDTO itemsCreateBindingModelDTO)
+        {
+            new ItemDomainModel
+            {
+                Text = itemsCreateBindingModelDTO.Text,
+            };
         }
     }
 }

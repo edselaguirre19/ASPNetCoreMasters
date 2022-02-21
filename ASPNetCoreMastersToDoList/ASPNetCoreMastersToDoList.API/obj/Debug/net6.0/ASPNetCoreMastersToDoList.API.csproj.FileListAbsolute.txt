@@ -27,3 +27,34 @@ C:\Users\EdselA\source\repos\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList
 C:\Users\EdselA\source\repos\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ref\ASPNetCoreMastersToDoList.API.dll
 C:\Users\EdselA\source\repos\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.pdb
 C:\Users\EdselA\source\repos\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.genruntimeconfig.cache
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\appsettings.json
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ASPNetCoreMastersToDoList.API.exe
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ASPNetCoreMastersToDoList.API.deps.json
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ASPNetCoreMastersToDoList.API.runtimeconfig.json
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ASPNetCoreMastersToDoList.API.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ref\ASPNetCoreMastersToDoList.API.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ASPNetCoreMastersToDoList.API.pdb
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ASPNetCoreMastersToDoList.Service.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\DomainModels.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\ASPNetCoreMastersToDoList.Service.pdb
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\bin\Debug\net6.0\DomainModels.pdb
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.csproj.AssemblyReference.cache
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.AssemblyInfoInputs.cache
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.AssemblyInfo.cs
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.csproj.CoreCompileInputs.cache
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\scopedcss\bundle\ASPNetCoreMastersToDoList.API.styles.css
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.csproj.CopyComplete
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ref\ASPNetCoreMastersToDoList.API.dll
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.pdb
+C:\Users\EdselA\OneDrive - Magenic\Documents\GitHub\ASPNetCoreMasters\ASPNetCoreMastersToDoList\ASPNetCoreMastersToDoList.API\obj\Debug\net6.0\ASPNetCoreMastersToDoList.API.genruntimeconfig.cache

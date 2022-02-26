@@ -9,11 +9,11 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
     public class ItemsController : ControllerBase
     {
         private readonly ILogger _logger;
-        private readonly IItemsService _itemsService;
+        private readonly IItemService _itemsService;
 
         public ItemsController(
             ILogger<ItemsController> logger,
-            IItemsService itemService)
+            IItemService itemService)
         {
             _logger = logger;
             _itemsService = itemService;
@@ -66,8 +66,8 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
 
 
         #region Private Methods
-        private ItemCreateBindingModelDTO MapItemCreateBindingModelToDTO(ItemCreateBindingModel itemCreateBindingModel)
-            => new ItemCreateBindingModelDTO() { Text = itemCreateBindingModel.Text };
+        private ItemDTO MapItemCreateBindingModelToDTO(ItemCreateBindingModel itemCreateBindingModel)
+            => new ItemDTO() { Text = itemCreateBindingModel.Text };
         #endregion
 
     }

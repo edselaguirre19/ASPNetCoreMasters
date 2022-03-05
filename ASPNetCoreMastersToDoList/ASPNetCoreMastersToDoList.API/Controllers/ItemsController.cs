@@ -2,9 +2,11 @@
 using ASPNetCoreMastersToDoList.Service;
 using ASPNetCoreMastersToDoList.API.BindingModels;
 using ASPNetCoreMastersToDoList.Service.DTO;
+using ASPNetCoreMastersToDoList.API.Filters;
 
 namespace ASPNetCoreMastersToDoList.API.Controllers
 {
+    [ValidationRequestFilter]
     [ApiController]
     public class ItemsController : ControllerBase
     {

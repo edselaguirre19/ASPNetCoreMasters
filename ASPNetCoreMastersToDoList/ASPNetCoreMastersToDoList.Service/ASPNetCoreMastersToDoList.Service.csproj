@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ASPNetCoreMastersToDoList.Repository\ASPNetCoreMastersToDoList.Repository.csproj" />
     <ProjectReference Include="..\DomainModels\DomainModels.csproj" />
   </ItemGroup>
 

@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace ASPNetCoreMastersToDoList.API.Controllers
 {
     [Authorize]
-    [ValidationRequestFilter]
+    [TypeFilter(typeof(ValidationRequestFilter))]
     [ApiController]
     public class ItemsController : ControllerBase
     {

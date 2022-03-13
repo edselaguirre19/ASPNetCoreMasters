@@ -22,12 +22,12 @@ namespace ASPNetCoreMastersToDoList.API.Filters
             var actionName = resultContext.RouteData.Values["action"];
             Debug.WriteLine($"Time Elapse for /{controllerName}/{actionName}: {stopWatch.ElapsedMilliseconds}ms");
 
-            var result = (OkObjectResult)resultContext.Result;
+            //var result = (OkObjectResult)resultContext.Result;
 
-            if(result.Value == null)
-            {
-                resultContext.HttpContext.Response.StatusCode = 404;
-            }
+            //if(result.Value == null)
+            //{
+            //    resultContext.HttpContext.Response.StatusCode = 404;
+            //}
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using ASPNetCoreMastersToDoList.API.BindingModels;
+﻿using ASPNetCoreMastersToDoList.API.Authorization;
+using ASPNetCoreMastersToDoList.API.BindingModels;
 using ASPNetCoreMastersToDoList.API.Configurations;
 using ASPNetCoreMastersToDoList.API.Filters;
 using ASPNetCoreMastersToDoList.Data;
@@ -71,6 +72,12 @@ builder.Services.AddAuthentication(options =>
             IssuerSigningKey = key
         };
     });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("CanEditItem",
+        policy => policy.Requirements.Add(new CanEditItemRequirement()));
+});
 
 //business config injections
 builder.Services.AddBusinessConfigurations();

@@ -7,9 +7,10 @@ namespace ASPNetCoreMastersToDoList.API.Configurations
     {
         public static IServiceCollection AddBusinessConfigurations(this IServiceCollection services)
         {
-            services.AddSingleton<IItemService, ItemService>();
-            services.AddSingleton<IItemRepository, ItemRepository>();
-            services.AddSingleton<DataContext>();
+            services.AddScoped<IItemService, ItemService>();
+            services.AddScoped<IItemRepository, ItemRepository>();
+            services.AddScoped<DataContext>();
+            services.AddScoped<IUserManagerService, UserManagerService>();
             return services;
         }
     }

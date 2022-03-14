@@ -27,7 +27,8 @@ namespace ASPNetCoreMastersToDoList.Repository
 
         public Item Get(int itemId)
         {
-            return new Item();
+            var item = _dataContext.Items.FirstOrDefault(x => x.Id == itemId);
+            return item;
         }
 
         public IEnumerable<Item> GetAll()

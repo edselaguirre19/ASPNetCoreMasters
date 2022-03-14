@@ -2,6 +2,6 @@
 {
     public class Authentication
     {
-        public JWT? JWT { get; set; }
+        public JwtOptions? JWT { get; set; }
     }
 }

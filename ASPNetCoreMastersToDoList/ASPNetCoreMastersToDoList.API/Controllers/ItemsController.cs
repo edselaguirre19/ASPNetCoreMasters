@@ -4,6 +4,8 @@ using ASPNetCoreMastersToDoList.API.BindingModels;
 using ASPNetCoreMastersToDoList.Service.DTO;
 using ASPNetCoreMastersToDoList.API.Filters;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using ASPNetCoreMastersToDoList.Data.Model;
 
 namespace ASPNetCoreMastersToDoList.API.Controllers
 {
@@ -14,13 +16,19 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
     {
         private readonly ILogger _logger;
         private readonly IItemService _itemsService;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly IAuthorizationService _authService;
 
         public ItemsController(
             ILogger<ItemsController> logger,
-            IItemService itemService)
+            IItemService itemService,
+            IAuthorizationService authService,
+            UserManager<IdentityUser> userManager)
         {
             _logger = logger;
             _itemsService = itemService;
+            _authService = authService;
+            _userManager = userManager;
         }
 
         [HttpGet("items")]
@@ -33,7 +41,7 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         [HttpGet("items/{id}")]
         public IActionResult Get(int id)
         {
-            _logger.LogInformation("Entering controller...");
+            _logger.LogInformation("Entering controller...");           
             return Ok(_itemsService.GetItem(id));
         }
 
@@ -53,10 +61,16 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         }
 
         [HttpPut("items/{id}")]
-        public IActionResult Put(int id,
+        public async Task<IActionResult> Put(int id,
             [FromBody] ItemCreateBindingModel itemCreateBindingModel)
         {
             _logger.LogInformation("Entering controller...");
+            var item = _itemsService.GetItem(id);
+            var canEditItem = await _authService.AuthorizeAsync(User, new Item() { CreatedBy = item.CreatedBy }, "CanEditItem");
+            if (!canEditItem.Succeeded)
+            {
+                return new ForbidResult();
+            }
             var itemCreateBindingModelDTO = MapItemCreateBindingModelToDTO(itemCreateBindingModel);
             return Ok(_itemsService.UpdateItem(id, itemCreateBindingModelDTO));
         }

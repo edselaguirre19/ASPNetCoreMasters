@@ -54,7 +54,7 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
             return actionResult;
         }
 
-        [HttpGet("Users/Register")]
+        [HttpPost("Users/Register")]
         public async Task<IActionResult> Register(RegisterBindingModel registerBindingModel)
         {
             //return Ok(this._authenticationSettings);

@@ -17,11 +17,14 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
 
         private readonly IUserManagerService _userManagerService;
         private readonly JwtOptions _options;
+        private readonly ILogger<UsersController> _logger;
 
         public UsersController(
+            ILogger<UsersController> logger,
             IUserManagerService userManagerService,
             IOptions<JwtOptions> options)
         {
+            _logger = logger;
             _userManagerService = userManagerService;
             _options = options.Value;
         }
@@ -29,6 +32,7 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         [HttpPost("Users/Login")]
         public async Task<IActionResult> Login(LoginBindingModel loginBindingModel)
         {
+            _logger.LogInformation("Logging In... {RequestTime}", DateTime.Now);
             IActionResult actionResult;
             var user = await _userManagerService.FindByEmailAsync(loginBindingModel.Email);
             if (user == null)
@@ -57,7 +61,7 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         [HttpPost("Users/Register")]
         public async Task<IActionResult> Register(RegisterBindingModel registerBindingModel)
         {
-            //return Ok(this._authenticationSettings);
+            _logger.LogInformation("Registring... {RequestTime}", DateTime.Now);
             var user = new IdentityUser
             {
                 Email = registerBindingModel.Email,
@@ -84,6 +88,7 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         [HttpPost("Users/Confirm")]
         public async Task<IActionResult> ConfirmEmail(ConfirmingBindingModel confirmingBindingModel)
         {
+            _logger.LogInformation("Confirming... {RequestTime}", DateTime.Now);
             var user = await _userManagerService.FindByEmailAsync(confirmingBindingModel.Email);
             var code = Encoding.UTF8.GetString(WebEncoders.Base64UrlDecode(confirmingBindingModel.Code));
 

@@ -34,28 +34,28 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         [HttpGet("items")]
         public IActionResult GetAll()
         {
-            _logger.LogInformation("Entering controller...");
+            _logger.LogInformation("Getting All Items... {RequestTime}", DateTime.Now);
             return Ok(_itemsService.GetAll());
         }
 
         [HttpGet("items/{id}")]
         public IActionResult Get(int id)
         {
-            _logger.LogInformation("Entering controller...");           
+            _logger.LogInformation("Getting Item... {RequestTime}", DateTime.Now);
             return Ok(_itemsService.GetItem(id));
         }
 
         [HttpGet("items/filterby")]
         public IActionResult GetByFilters([FromQuery] Dictionary<string, string> filters)
         {
-            _logger.LogInformation("Entering controller...");
+            _logger.LogInformation("Getting Filtered Items... {RequestTime}", DateTime.Now);
             return Ok(_itemsService.GetFilteredItems(filters));
         }
 
         [HttpPost("items")]
         public IActionResult Post(ItemCreateBindingModel itemCreateBindingModel)
         {
-            _logger.LogInformation("Entering controller...");
+            _logger.LogInformation("Creating Items... {RequestTime}", DateTime.Now);
             var itemCreateBindingModelDTO = MapItemCreateBindingModelToDTO(itemCreateBindingModel);
             return Ok(_itemsService.SaveItems(itemCreateBindingModelDTO));
         }
@@ -64,11 +64,12 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         public async Task<IActionResult> Put(int id,
             [FromBody] ItemCreateBindingModel itemCreateBindingModel)
         {
-            _logger.LogInformation("Entering controller...");
+            _logger.LogInformation("Updating Item... {RequestTime}", DateTime.Now);
             var item = _itemsService.GetItem(id);
             var canEditItem = await _authService.AuthorizeAsync(User, new Item() { CreatedBy = item.CreatedBy }, "CanEditItem");
             if (!canEditItem.Succeeded)
             {
+                _logger.LogError("Cannot Update Item... {RequestTime}", DateTime.Now);
                 return new ForbidResult();
             }
             var itemCreateBindingModelDTO = MapItemCreateBindingModelToDTO(itemCreateBindingModel);
@@ -78,7 +79,7 @@ namespace ASPNetCoreMastersToDoList.API.Controllers
         [HttpDelete("items/{id}")]
         public IActionResult Delete(int id)
         {
-            _logger.LogInformation("Entering controller...");
+            _logger.LogInformation("Deleting Item... {RequestTime}", DateTime.Now);
             return Ok(_itemsService.DeleteItem(id));
         }
 
